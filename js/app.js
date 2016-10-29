@@ -1,6 +1,9 @@
 //Problem is user interaction doesnt provide desired results//
 // Add user activaity so user can do basic tasks//
-
+var taskInput = document.getElementById("new-task"); //new-task
+var addButton = document.getElementsByTagName("button")[0];
+var incompleteTasksHolder = document.getElementById("incomplete-tasks"); //incomplete-tasks
+var completedTaskHolder = document.getElementById("completed-tasks"); //completed-tasks
 // Add a new task  
 var addTask = function() {
   //When the button is pressed 
@@ -43,6 +46,7 @@ var taskinComplete = function() {
   //When the check box is unchecked
     //Append the task list item to the incomplete tasks
 }
+
 
 
 
