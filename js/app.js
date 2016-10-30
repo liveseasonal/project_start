@@ -6,6 +6,7 @@ var incompleteTasksHolder = document.getElementById("incomplete-tasks"); //incom
 var completedTaskHolder = document.getElementById("completed-tasks"); //completed-tasks
 // Add a new task  
 var addTask = function() {
+  console.log("Add Task......")
   //When the button is pressed 
   //Create a new list itemwith the text from new task
     //Input checkbox
@@ -18,6 +19,7 @@ var addTask = function() {
 
 // Edit an existing task
 var editTask = function() {
+  console.log("Edit Task......")
   //When the edit button is pressed 
     //if the class of the parent is edit mode
       //Switch back from edit mode
@@ -31,11 +33,13 @@ var editTask = function() {
 
 //Delete an existing task
 var deleteTask = function() {
+  console.log("Delete Task......")
   ////When the delete button is pressed
     //Remove parent list item from the ol 
 }
 //Mark a task as complaet
 var taskCompleted = function() {
+  console.log("Task Complete......")
   //When the check box is checked
     //Append the task list item to the complete tasks
 }
@@ -43,6 +47,7 @@ var taskCompleted = function() {
 
 //Mark a task as incomplete
 var taskinComplete = function() {
+  console.log("Task Incomplete......")
   //When the check box is unchecked
     //Append the task list item to the incomplete tasks
 }
