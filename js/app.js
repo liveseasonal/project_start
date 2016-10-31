@@ -4,6 +4,30 @@ var taskInput = document.getElementById("new-task"); //new-task
 var addButton = document.getElementsByTagName("button")[0];
 var incompleteTasksHolder = document.getElementById("incomplete-tasks"); //incomplete-tasks
 var completedTaskHolder = document.getElementById("completed-tasks"); //completed-tasks
+
+//New Task List Item
+var createNewTaskElement = function(taskString) {
+  //Create List Item
+  var listItem = document.createElement("li");
+
+  //input (checkbox)
+  var checkBox = document.createElement("input"); // checkbox
+  //label
+  var label = document.createElement("label");
+  //input (text)
+  var editInput = document.createElement("input"); // text
+  //button.edit
+  var editButton = document.createElement("button");
+  //button.delete
+  var deleteButton = document.createElement("button");
+
+
+  return listItem;
+}
+
+
+
+
 // Add a new task  
 var addTask = function() {
   console.log("Add Task......")
@@ -51,6 +75,15 @@ var taskinComplete = function() {
   //When the check box is unchecked
     //Append the task list item to the incomplete tasks
 }
+
+var bindTaskEvents = function(taskListItem, checkBoxEventHandler) {
+  console.log("Bind list item events");
+  //select taskListItem's children
+  var checkBox = taskListItem.querySelector("input[type=checkbox]");
+  var editButton = taskListItem.querySelector("button.edit");
+  var deleteButton = taskListItem.querySelector("button.delete");
+
+  }
 
 
 
