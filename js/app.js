@@ -89,6 +89,8 @@ var taskinComplete = function() {
   console.log("Task Incomplete......")
   //When the check box is unchecked
     //Append the task list item to the incomplete tasks
+  var listItem = this.parentNode;
+  incompleteTasksHolder.appendChild(listItem);
 }
 
 var bindTaskEvents = function(taskListItem, checkBoxEventHandler) {
