@@ -21,6 +21,21 @@ var createNewTaskElement = function(taskString) {
   //button.delete
   var deleteButton = document.createElement("button");
 
+  //Each element needs modifying
+
+  //Each item needs appending
+  //Input checkbox
+    //Label
+    //Input(text)
+    //button.edit
+    //button.delete
+
+  //Each element needs appending
+  listItem.appendChild(checkBox);
+  listItem.appendChild(label);
+  listItem.appendChild(editInput);
+  listItem.appendChild(editButton);
+  listItem.appendChild(deleteButton);
 
   return listItem;
 }
@@ -33,12 +48,12 @@ var addTask = function() {
   console.log("Add Task......")
   //When the button is pressed 
   //Create a new list itemwith the text from new task
-    //Input checkbox
-    //Label
-    //Input(text)
-    //button.edit
-    //button.delete
-    // Each elements, needs modified and appended
+
+   //Create a new list item with the text from #new-task:
+  var listItem = createNewTaskElement("Some new task");
+  //Append listItem to incompleteTasksHolder
+  incompleteTasksHolder.appendChild(listItem);
+    
 }    
 
 // Edit an existing task
